@@ -1,7 +1,10 @@
 {
   "private": true,
   "sideEffects": false,
+  "homepage": "https://neelasantosh.github.io/saharsh-birthday-invite",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "remix build",
     "dev": "remix dev",
     "typecheck": "tsc"
