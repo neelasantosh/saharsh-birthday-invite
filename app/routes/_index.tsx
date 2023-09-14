@@ -92,7 +92,7 @@ export default function Index() {
               Birthday on:
             </div>
             <h3 className="text-3xl md:text-4xl font-black mb-6 text-cente font-sans" style={{ color: 'red' }}>
-              September, 30th 2023
+              September, 29th 2023
             </h3>
           </div>
         </div>
