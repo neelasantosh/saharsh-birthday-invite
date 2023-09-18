@@ -86,7 +86,7 @@ const Message = ({ isMobile }: MessageProps) => {
   return (
     <div>
       <h4 className="text-3xl font-head font-bold text-center mb-10 md:mb-16 text-gray-700 px-4">
-       Give blessings to Saharsh
+       Bless the birthday boy!!
       </h4>
       <div className="w-full flex flex-wrap">
         <div className="w-full md:w-1/2 px-4">
