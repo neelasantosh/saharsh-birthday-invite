@@ -4,11 +4,9 @@ import type { sheets_v4 } from "googleapis";
 export const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
 
 export const getAuthToken = async () => {
-  const privateKeyString = (
-    process.env.GOOGLE_PRIVATE_KEY || '{ "privateKey": null }'
-  ).replace(/\n/g, "\\n");
+  const privateKeyString = (process.env.GOOGLE_PRIVATE_KEY || { privateKey: 'null' }).replace(/\\n/g, '\\n');
   const { privateKey } = JSON.parse(privateKeyString);
-
+   
   const auth = new google.auth.GoogleAuth({
     scopes: SCOPES,
     projectId: process.env.GOOGLE_PROJECTID,
