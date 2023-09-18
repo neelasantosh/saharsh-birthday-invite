@@ -72,7 +72,7 @@ const Message = ({ isMobile }: MessageProps) => {
       const userInfo = await axios.get(
         "https://www.googleapis.com/oauth2/v3/userinfo",
         {
-          headers: { Authorization: `Bearer ${res.access_token}` },
+          headers: { Authorization: `Bearer ${res.access_token}`, 'Content-Type': 'application/json', },
         }
       );
 
@@ -80,6 +80,7 @@ const Message = ({ isMobile }: MessageProps) => {
       formData.append("google_name", userInfo.data.name);
       fetcher.submit(formData, { method: "post" });
     },
+    flow: 'implicit',
   });
 
   return (
