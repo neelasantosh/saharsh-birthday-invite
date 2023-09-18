@@ -29,7 +29,13 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
           <h4 className="text-center font-head text-5xl md:text-6xl mb-6 text-gray-800">
             Son of Neela. Shivani & Santosh
           </h4>
-
+           <h5 className="text-center font-medium font-sans text-xl md:text-2xl mb-2 md:mb-3 text-gray-500">
+           Venue, Date / Time :
+          </h5>
+          <h5 className="text-center font-medium font-sans text-xl md:text-2xl mb-2 md:mb-3 text-gray-500">
+            Shruthi banquets, Kompally - Macha Bollarum Road.
+            29th September, 7:00 PM. 
+          </h5>
           <div className="w-[350px] mb-12">
             {!recipient ? null : (
               <Fragment>
